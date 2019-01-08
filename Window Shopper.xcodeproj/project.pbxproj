@@ -12,6 +12,7 @@
 		45EBE27421E55BA60069BBFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45EBE27221E55BA60069BBFD /* Main.storyboard */; };
 		45EBE27621E55BA80069BBFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45EBE27521E55BA80069BBFD /* Assets.xcassets */; };
 		45EBE27921E55BA80069BBFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45EBE27721E55BA80069BBFD /* LaunchScreen.storyboard */; };
+		45EBE28321E55FF60069BBFD /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBE28221E55FF60069BBFD /* CurrencyTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		45EBE27521E55BA80069BBFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45EBE27821E55BA80069BBFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45EBE27A21E55BA80069BBFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45EBE28221E55FF60069BBFD /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		45EBE26D21E55BA60069BBFD /* Window Shopper */ = {
 			isa = PBXGroup;
 			children = (
+				45EBE28121E55FB10069BBFD /* Views */,
 				45EBE28021E55EE60069BBFD /* Controller */,
 				45EBE26E21E55BA60069BBFD /* AppDelegate.swift */,
 				45EBE27221E55BA60069BBFD /* Main.storyboard */,
@@ -70,6 +73,14 @@
 				45EBE27021E55BA60069BBFD /* MainVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		45EBE28121E55FB10069BBFD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				45EBE28221E55FF60069BBFD /* CurrencyTextField.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45EBE27121E55BA60069BBFD /* MainVC.swift in Sources */,
+				45EBE28321E55FF60069BBFD /* CurrencyTextField.swift in Sources */,
 				45EBE26F21E55BA60069BBFD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
