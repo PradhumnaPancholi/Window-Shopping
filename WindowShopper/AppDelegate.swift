@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Window Shopper
+//  WindowShopper
 //
-//  Created by user148657 on 1/8/19.
+//  Created by user148657 on 1/16/19.
 //  Copyright © 2019 Pradhumna Pancholi. All rights reserved.
 //
 
