@@ -28,15 +28,31 @@ class MainVC: UIViewController {
         calcBtn.addTarget(self, action: #selector(MainVC.calculate), for: .touchUpInside)
         
         //for adding calcBtn as accessory view//
-       wageTxt.inputAccessoryView = calcBtn
+        wageTxt.inputAccessoryView = calcBtn
+        itemPriceTxt.inputAccessoryView = calcBtn
+        
+        //for keeping hoursLbl and hoursTxt hidden//
+        hoursTxt.isHidden = true
+        hoursLbl.isHidden = true
     }
 
     @objc func calculate() {
-        print("it works")
+        //validation and logic for calculation//
+        if let wageTxt = wageTxt.text, let itemPriceTxt = itemPriceTxt.text{
+            if let wage = Double(wageTxt), let itemPrice = Double(itemPriceTxt){
+                view.endEditing(true)
+                        hoursTxt.isHidden = false
+                        hoursLbl.isHidden = false
+                        hoursLbl.text = "\(Wage.getHours(forWage: wage, forPrice: itemPrice))"
+            }
+        }
     }
 
     @IBAction func clearCalcPressed(_ sender: Any) {
-        
+        hoursLbl.isHidden = true
+        hoursTxt.isHidden = true
+        wageTxt.text = ""
+        itemPriceTxt.text = ""
     }
 }
 
