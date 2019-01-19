@@ -68,8 +68,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="itemPriceTxt" destination="Dw0-5v-OcQ" id="pvZ-a4-kG8"/>
-                        <outlet property="wageTxt" destination="kPR-AT-a5f" id="efH-CK-Abr"/>
+                        <outlet property="itemPriceTxt" destination="Dw0-5v-OcQ" id="oJu-Ku-xQw"/>
+                        <outlet property="wageTxt" destination="kPR-AT-a5f" id="fBa-Fa-3JN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
