@@ -48,33 +48,76 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nYs-J0-zZh">
+                                <rect key="frame" x="137.5" y="325" width="100" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Yxc-yL-CfH"/>
+                                    <constraint firstAttribute="height" constant="70" id="paN-31-3fR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="54"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zac-iH-zNe">
+                                <rect key="frame" x="152.5" y="405" width="70" height="27.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27.5" id="IhE-RA-wAY"/>
+                                    <constraint firstAttribute="width" constant="70" id="aSZ-J5-YWW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4NB-KH-mBY">
+                                <rect key="frame" x="50" y="587" width="275" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="4cT-B9-qfJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                <state key="normal" title="Clear Calculation ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearCalcPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xwf-q4-gQg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="SLO-Zx-AC3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="1Ib-RP-B5Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4NB-KH-mBY" secondAttribute="bottom" constant="40" id="3wm-a1-Q84"/>
                             <constraint firstItem="kPR-AT-a5f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="6Ka-of-ILy"/>
+                            <constraint firstItem="nYs-J0-zZh" firstAttribute="top" secondItem="Dw0-5v-OcQ" secondAttribute="bottom" constant="20" id="9E1-bI-asE"/>
+                            <constraint firstItem="4NB-KH-mBY" firstAttribute="width" secondItem="Dw0-5v-OcQ" secondAttribute="width" id="HTF-4w-gsB"/>
+                            <constraint firstItem="Zac-iH-zNe" firstAttribute="top" secondItem="nYs-J0-zZh" secondAttribute="bottom" constant="10" id="Hoi-A0-e9J"/>
                             <constraint firstItem="Dw0-5v-OcQ" firstAttribute="top" secondItem="kPR-AT-a5f" secondAttribute="bottom" constant="35" id="ILS-H9-cVi"/>
                             <constraint firstItem="3ru-mJ-WTF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JcJ-XN-1Rh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kPR-AT-a5f" secondAttribute="trailing" constant="50" id="Jmh-Zo-Als"/>
                             <constraint firstItem="3ru-mJ-WTF" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ORv-6v-MCB"/>
                             <constraint firstItem="Dw0-5v-OcQ" firstAttribute="leading" secondItem="kPR-AT-a5f" secondAttribute="leading" id="RU5-RW-vDV"/>
                             <constraint firstItem="Dw0-5v-OcQ" firstAttribute="trailing" secondItem="kPR-AT-a5f" secondAttribute="trailing" id="SQ1-xa-nhg"/>
+                            <constraint firstItem="nYs-J0-zZh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tmt-65-5HI"/>
+                            <constraint firstItem="Zac-iH-zNe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Uo3-Ny-49s"/>
                             <constraint firstItem="3ru-mJ-WTF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WxI-q7-7v9"/>
                             <constraint firstItem="SLO-Zx-AC3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eFp-0y-UrD"/>
                             <constraint firstItem="3ru-mJ-WTF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lxc-Na-qvx"/>
                             <constraint firstItem="Dw0-5v-OcQ" firstAttribute="height" secondItem="kPR-AT-a5f" secondAttribute="height" id="oU7-bJ-0JF"/>
                             <constraint firstItem="kPR-AT-a5f" firstAttribute="top" secondItem="SLO-Zx-AC3" secondAttribute="bottom" constant="50" id="qMa-5C-SXu"/>
+                            <constraint firstItem="4NB-KH-mBY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yfA-2D-r9M"/>
+                            <constraint firstItem="4NB-KH-mBY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zmW-8X-ifX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="hoursLbl" destination="nYs-J0-zZh" id="2GU-io-gXN"/>
+                        <outlet property="hoursTxt" destination="Zac-iH-zNe" id="pxD-a8-tvv"/>
                         <outlet property="itemPriceTxt" destination="Dw0-5v-OcQ" id="oJu-Ku-xQw"/>
                         <outlet property="wageTxt" destination="kPR-AT-a5f" id="fBa-Fa-3JN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-468" y="-265"/>
+            <point key="canvasLocation" x="-720.79999999999995" y="-333.28335832083962"/>
         </scene>
     </scenes>
     <resources>
