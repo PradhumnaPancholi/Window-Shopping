@@ -10,6 +10,22 @@ import UIKit
 
 @IBDesignable
 class CurrencyTxtField: UITextField {
+    
+    //code for curreny symbol based on users location//
+    override func draw(_ rect: CGRect) {
+        let size : CGFloat = 20
+        
+        let currencyLbl = UILabel(frame: CGRect(x: 5, y: (frame.size.height/2) - (size/2)	, width: size, height: size))
+        currencyLbl.backgroundColor = #colorLiteral(red: 0.6470385342, green: 0.6470385342, blue: 0.6470385342, alpha: 0.8028169014)
+        currencyLbl.textAlignment = .center
+        currencyLbl.textColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+        
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        
+        currencyLbl.text = formatter.currencySymbol
+        addSubview(currencyLbl)        
+    }
 
     //to apply code in storyboard(in development)
     override func prepareForInterfaceBuilder() {
