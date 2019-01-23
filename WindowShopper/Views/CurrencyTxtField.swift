@@ -24,7 +24,7 @@ class CurrencyTxtField: UITextField {
         formatter.numberStyle = .currency
         
         currencyLbl.text = formatter.currencySymbol
-        addSubview(currencyLbl)        
+        addSubview(currencyLbl)	        
     }
 
     //to apply code in storyboard(in development)
@@ -43,10 +43,11 @@ class CurrencyTxtField: UITextField {
         //for placeholder//
         if let p = placeholder {
             //if empty, run following//
-            let placeHolderText = NSAttributedString(string: p)
-            attributedText = placeHolderText
+            let placeHolderText = NSAttributedString(string: p, attributes: [.foregroundColor : #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0) ])
+            attributedPlaceholder = placeHolderText
+            //for input text
             textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-        }
+       }
     }
 
 }
